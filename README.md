@@ -25,15 +25,23 @@ This is a layer over the authorization server which provides an ID token to the 
 ## Grant Types
 It is a way an application gets an access token. They are as follows: 
 ### Authorization Code
-Used in Server side web applications and mobile native applications
+Used in Server side web applications and mobile native applications. Requirements are that the client application must be capable of handling a re-direction flow. Client applications must also be capable of securely storing the secret key. 
 ### Client Credentials
-Used in Server side scripts with no UI 
+Used in Server side scripts with no UI. Machine to machine interaction with no human intervention.
 ### PKCE Enhanced Authorization code
-Used in single page Javascript app and mobile native applications
+Used in single page Javascript app and mobile native applications. Since secret keys cannot be kept safely the client application generates its own key and sends it to the authorization server requesting for the access token.
+### Password Grant Type
+Must only be used on applications that do not support redirect  
 ### Device Code
 Used in applications that are IoT 
 ### Refresh Token
-Used to exchange a refresh token for an access token
+Used to exchange a refresh token for an access token. This is used by the client application to request for a new access token for an expired access token and we will get back a new access token and in some cases a new refresh token. To get a refresh token that never expires send the http body parameter as scope=offline_access. 
+
+## Keycloak server   
+Starting a key clock server - ./standalone.sh
+
+
+
 
 
 
