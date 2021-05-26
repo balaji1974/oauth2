@@ -19,4 +19,22 @@ This is used to retrieve the actual authorization information
 ### Self contained authorization information
 This is json information containing 3 parts namely the header section, payload section and signature and it is base64 encoded    
 
+## Open ID Connect
+This is a layer over the authorization server which provides an ID token to the client which contains information of the currently authenticated user
+
+## Grant Types
+It is a way an application gets an access token. They are as follows: 
+### Authorization Code
+Used in Server side web applications and mobile native applications
+### Client Credentials
+Used in Server side scripts with no UI 
+### PKCE Enhanced Authorization code
+Used in single page Javascript app and mobile native applications
+### Device Code
+Used in applications that are IoT 
+### Refresh Token
+Used to exchange a refresh token for an access token
+
+
+
 
