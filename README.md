@@ -1,7 +1,5 @@
-# oauth2
-
-
-## OAuth 2.0
+# OAuth 2.0
+It is an authroization framework 
 Open Authorization (It is Federated (single place) Authentication and Delegated (gives delegation) Authorization) 
 
 ## Roles 
@@ -39,6 +37,8 @@ Used to exchange a refresh token for an access token. This is used by the client
 
 ## Keycloak server   
 Starting a key clock server - ./standalone.sh
+
+
 
 
 
