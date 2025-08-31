@@ -278,6 +278,10 @@ redirected to the resource and you will see the successfull
 message as below:
 You are now accessing the protected resource
 
+
+Finally stop the keycloak server by running the command:
+docker-compose down
+
 ```
 
 
